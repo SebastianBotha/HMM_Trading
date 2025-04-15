@@ -3,7 +3,7 @@ Bewlo are 7 new indicators to add to Main_V5 to enhance the capabilities.
 
 1. Treasury Yields & Yield Curve
 
-A) 10-Year Yield (^TNX)
+A) 10-Year Yield (^TNX) - Done 
 	1.	How to Implement
 	•	Absolute Level: Directly use the yield value (e.g., 3.5%) as a continuous feature. Often valuable as it reflects the current cost of capital for longer-term risk assets.
 	•	Daily Change or 1-Week Change: Compute yield differences (e.g., TNX[t] - TNX[t-1]). Large positive or negative shifts can signal impending transitions.
@@ -11,7 +11,7 @@ A) 10-Year Yield (^TNX)
 	2.	Why it Helps
 	•	A rising 10-year yield can indicate higher inflation expectations or tighter financial conditions—both can push equity markets into a risk-off or sideways regime if the rise is abrupt.
 
-B) 30-Year Yield (^TYX) & 2-Year Yield (^FVX or ^IRX)
+B) 30-Year Yield (^TYX) & 2-Year Yield (^FVX or ^IRX) - Next 
 	1.	How to Implement
 	•	Absolute Levels for each maturity if you want to see the entire term structure.
 	•	Daily or Weekly Changes to detect abrupt shifts in short-term vs. long-term rates.
