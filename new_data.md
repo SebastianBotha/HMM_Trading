@@ -22,7 +22,7 @@ B) 30-Year Yield (^TYX) & 2-Year Yield (^FVX or ^IRX) - Next
 
 ⸻
 
-2. Credit Spread via ETFs: HYG / TLT Ratio
+2. Credit Spread via ETFs: HYG / TLT Ratio - done 
 	1.	How to Implement
 	•	Ratio: After downloading prices (or returns), compute \text{ratio} = \frac{HYG}{TLT}.
 	•	Daily % Change in the ratio: (\text{ratio}[t] - \text{ratio}[t-1]) / \text{ratio}[t-1].
@@ -33,12 +33,12 @@ B) 30-Year Yield (^TYX) & 2-Year Yield (^FVX or ^IRX) - Next
 
 ⸻
 
-3. Sector Rotation Signals
+3. Sector Rotation Signals - Done 
 
 A) XLY/XLP (Discretionary vs. Staples), XLP/SPY, XLU/SPY, XLF/SPY
 	1.	How to Implement
 	•	Ratio of Prices: e.g., XLY_Close / XLP_Close.
-	•	Rolling % Change: e.g., use a 5-day or 10-day return of the ratio.
+	•	Rolling % Change: e.g., use a 10-day return of the ratio.
 	•	Z-score or Normalized Spread: If you prefer each feature in a comparable scale, subtract a rolling mean and divide by rolling std.
 	2.	Why it Helps
 	•	When cyclical (XLY) outperforms defensive (XLP), it suggests bullish sentiment.
@@ -57,7 +57,7 @@ A) XLY/XLP (Discretionary vs. Staples), XLP/SPY, XLU/SPY, XLF/SPY
 
 ⸻
 
-5. Gold Performance: GLD
+5. Gold Performance: GLD - DONE
 	1.	How to Implement
 	•	Absolute Price of GLD or log returns (for more stable distribution).
 	•	Ratio of GLD to SPY, or daily changes in that ratio.
@@ -68,7 +68,7 @@ A) XLY/XLP (Discretionary vs. Staples), XLP/SPY, XLU/SPY, XLF/SPY
 
 ⸻
 
-6. Volatility Term Structure: ^VIX vs. ^VIX3M
+6. Volatility Term Structure: ^VIX vs. ^VIX3M -done 
 	1.	How to Implement
 	•	Absolute Values: You can directly use vix_close and vix3m_close.
 	•	Spread or Ratio: \text{VIX3M} - \text{VIX} or \frac{\text{VIX3M}}{\text{VIX}}.
